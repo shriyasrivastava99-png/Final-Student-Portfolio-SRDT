@@ -1,0 +1,290 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Element Selector */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    background-color: #F5F4EA;
+    color: #283D32;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #FFFFFF;
+    padding: 20px 8%;
+    text-align: center;
+    border-bottom: 2px solid #D4E2D2;
+}
+
+header h2 {
+    color: #355B46;
+    font-size: 30px;
+}
+
+header span,
+.home span {
+    color: #6B9277;
+}
+
+header p {
+    color: #637468;
+    font-size: 17px;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 38px 20px;
+    background-color: #E7EFE4;
+    background-image: linear-gradient(to right, #E7EFE4, #F8F5E9);
+}
+
+.profile {
+    width: 155px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    color: #52675A;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Class Selector */
+.button {
+    display: inline-block;
+    background-color: #52765D;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #355B46;
+}
+
+/* Navigation */
+nav {
+    background-color: #FFFFFF;
+    padding: 16px 10px;
+    text-align: center;
+    border-bottom: 1px solid #D4E2D2;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #355B46;
+    margin: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #A06B3B;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    width: 95%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* ID and Element Selectors */
+section.section {
+    background-color: #FFFFFF;
+    padding: 24px;
+    margin: 20px 0;
+    border: 1px solid #DCE6D8;
+    border-radius: 12px;
+}
+
+.section h2 {
+    color: #355B46;
+    font-size: 27px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #D4E2D2;
+    padding-bottom: 6px;
+}
+
+.section h3 {
+    color: #52765D;
+    font-size: 21px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+/* Personal Information Table */
+.personal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #F7F7F0;
+}
+
+.personal-table th {
+    background-color: #52765D;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.personal-table td {
+    border: 1px solid #D4E2D2;
+    padding: 12px;
+    text-align: left;
+}
+
+.personal-table tr:hover {
+    background-color: #E7EFE4;
+}
+
+/* Skills */
+.skills {
+    text-align: center;
+}
+
+.skills span {
+    display: inline-block;
+    background-color: #E7EFE4;
+    color: #355B46;
+    padding: 9px 17px;
+    margin: 6px;
+    border: 1px solid #C9DCC9;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.skills span:hover {
+    background-color: #52765D;
+    color: #FFFFFF;
+}
+
+/* Group Selector */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Descendant Selector */
+.section p a {
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: #355B46;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+/* Absolute Units and Dimensions */
+.profile {
+    width: 155px;
+    height: 170px;
+}
+
+/* Alpha Channel Example */
+.info-card {
+    background-color: rgba(231, 239, 228, 0.45);
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .home h1 {
+        font-size: 26px;
+    }
+
+    .section h2 {
+        font-size: 23px;
+    }
+
+    section.section {
+        padding: 16px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 165px;
+    }
+    
+/* Feedback Form */
+.feedback-form {
+    background-color: #F7F7F0;
+    padding: 18px;
+    border: 1px solid #DCE6D8;
+    border-radius: 8px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    border: 1px solid #C9DCC9;
+    background-color: #FFFFFF;
+}
+
+.feedback-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #52765D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-button:hover {
+    background-color: #355B46;
+}
+
+}
